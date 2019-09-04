@@ -34,7 +34,7 @@ public class AlumnoJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
-    public boolean agregarAlumno(Alumno alumno) throws PreexistingEntityException, Exception {
+    public boolean agregarAlumno(Alumno alumno) {
         EntityManager em = null;
         try {
             em = getEntityManager();
